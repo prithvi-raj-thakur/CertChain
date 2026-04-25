@@ -1,5 +1,7 @@
 # CertChain — Blockchain Certificate Generation & Verification System
 
+![CertChain UI](./client/src/assets/hero.png)
+
 A full-stack web application for issuing and verifying **tamper-proof digital certificates** using the Ethereum blockchain.
 
 ![Tech Stack](https://img.shields.io/badge/React-18-61DAFB?logo=react) ![Solidity](https://img.shields.io/badge/Solidity-0.8.20-363636?logo=solidity) ![Node](https://img.shields.io/badge/Node.js-Express-339933?logo=nodedotjs) ![Hardhat](https://img.shields.io/badge/Hardhat-2.x-yellow)
