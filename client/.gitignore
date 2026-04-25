@@ -1,0 +1,17 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Vite / React Build output
+dist
+dist-ssr
+*.local
+
+# Configs
+.env
+.env.local
+
+# Dependencies
+node_modules/
+.DS_Store

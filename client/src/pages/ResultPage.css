@@ -1,0 +1,113 @@
+/* src/pages/ResultPage.css */
+
+.result-page {
+  padding-top: 68px;
+  min-height: 100vh;
+  position: relative;
+}
+
+.result-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 24px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Back button row */
+.result-back {
+  margin-bottom: 32px;
+}
+
+/* Status banner */
+.result-banner {
+  border-radius: 20px;
+  padding: 32px 36px;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  animation: fadeInUp 0.5s ease;
+}
+
+.result-banner.valid {
+  background: rgba(34,197,94,0.08);
+  border: 1px solid rgba(34,197,94,0.3);
+  box-shadow: 0 0 40px rgba(34,197,94,0.1);
+}
+
+.result-banner.invalid {
+  background: rgba(239,68,68,0.08);
+  border: 1px solid rgba(239,68,68,0.3);
+  box-shadow: 0 0 40px rgba(239,68,68,0.1);
+}
+
+.result-banner-icon {
+  font-size: 52px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.result-banner-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.result-banner.valid   .result-banner-title { color: #4ade80; }
+.result-banner.invalid .result-banner-title { color: #f87171; }
+
+.result-banner-msg { font-size: 0.9rem; color: #8888aa; }
+
+/* Divider */
+.result-section-title {
+  font-size: 0.8rem;
+  color: #8888aa;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+  margin-top: 28px;
+}
+
+/* QR Code */
+.result-qr-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  background: rgba(15,15,30,0.7);
+  border: 1px solid rgba(108,99,255,0.15);
+  border-radius: 16px;
+}
+
+.result-qr-container img {
+  width: 160px;
+  height: 160px;
+  border-radius: 8px;
+}
+
+.result-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+/* Skeleton / loading */
+.skeleton {
+  background: linear-gradient(90deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0.04) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 8px;
+}
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+
+@media (max-width: 560px) {
+  .result-banner { flex-direction: column; text-align: center; }
+  .result-actions { justify-content: center; }
+}

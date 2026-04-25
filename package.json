@@ -1,0 +1,22 @@
+{
+  "name": "certificate-validation-root",
+  "version": "1.0.0",
+  "description": "Blockchain-based Digital Certificate Generation and Verification System",
+  "private": true,
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "deploy:local": "npx hardhat run scripts/deploy.js --network hardhat",
+    "deploy:ganache": "npx hardhat run scripts/deploy.js --network ganache",
+    "node": "npx hardhat node",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.22.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}

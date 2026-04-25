@@ -1,0 +1,99 @@
+/* src/pages/VerifyCertificate.css */
+
+.verify-page {
+  padding-top: 68px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.verify-container {
+  width: 100%;
+  max-width: 600px;
+  padding: 60px 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.verify-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.verify-icon {
+  width: 72px;
+  height: 72px;
+  background: linear-gradient(135deg, rgba(108,99,255,0.2), rgba(56,189,248,0.15));
+  border: 1px solid rgba(108,99,255,0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  margin: 0 auto 20px;
+  animation: pulse-glow 2.5s ease-in-out infinite;
+}
+
+.verify-header h1 { margin-bottom: 10px; }
+
+.verify-card {
+  background: rgba(15, 15, 30, 0.85);
+  border: 1px solid rgba(108, 99, 255, 0.2);
+  border-radius: 24px;
+  padding: 40px;
+  backdrop-filter: blur(16px);
+  animation: fadeInUp 0.5s ease;
+}
+
+.verify-or {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0;
+  color: #8888aa;
+  font-size: 0.85rem;
+}
+.verify-or::before,
+.verify-or::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(255,255,255,0.07);
+}
+
+/* How it works */
+.verify-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.verify-step {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 0.88rem;
+  color: #8888aa;
+}
+
+.verify-step-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(108,99,255,0.15);
+  border: 1px solid rgba(108,99,255,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #a78bfa;
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .verify-card { padding: 28px 20px; }
+}
