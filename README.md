@@ -1,6 +1,6 @@
 # CertChain — Blockchain Certificate Generation & Verification System
 
-![CertChain UI](./client/src/assets/hero.png)
+![CertChain UI](./client/src/assets/ui.png)
 
 A full-stack web application for issuing and verifying **tamper-proof digital certificates** using the Ethereum blockchain.
 
